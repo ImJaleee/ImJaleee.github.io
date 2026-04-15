@@ -25,5 +25,14 @@
     "endYear": "2022",
     "description": "Teas",
     "id": "1776295321833"
+  },
+  {
+    "company": "Test",
+    "logo": "",
+    "position": "Data Analyst Intern",
+    "startYear": "2021",
+    "endYear": "2022",
+    "description": "Testtt",
+    "id": "1776295383601"
   }
 ]
