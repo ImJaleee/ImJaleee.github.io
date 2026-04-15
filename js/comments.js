@@ -1,5 +1,5 @@
 // Config Google Apps Script Web App URL here
-const SCRIPT_URL = ''; // FILL THIS WITH APPS SCRIPT WEB APP URL
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwBrkwRgc7gUWQ9rcz9sdKWKOfY54-iHhJfmtvjaGJaLo784gVdFOcvizPkegFIU-Xv/exec'; // FILL THIS WITH APPS SCRIPT WEB APP URL
 
 document.addEventListener('DOMContentLoaded', () => {
     const listContainer = document.getElementById('commentsList');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Reset form
             form.reset();
-            
+
             // Optimistically add comment
             addCommentToList({
                 name: name,
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch(SCRIPT_URL);
             if (!response.ok) throw new Error('Fetch failed');
             const data = await response.json();
-            
+
             listContainer.innerHTML = '';
             if (data.length === 0) {
                 listContainer.innerHTML = '<div class="loading-text">Be the first to comment!</div>';
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function addCommentToList(comment, append = false) {
         const item = document.createElement('div');
         item.className = 'comment-item';
-        
+
         // Format timestamp nicely
         let timeStr = 'Just now';
         if (comment.timestamp) {
@@ -123,10 +123,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function escapeHtml(unsafe) {
         return (unsafe || '').toString()
-             .replace(/&/g, "&amp;")
-             .replace(/</g, "&lt;")
-             .replace(/>/g, "&gt;")
-             .replace(/"/g, "&quot;")
-             .replace(/'/g, "&#039;");
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
     }
 });
