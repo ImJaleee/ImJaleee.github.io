@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajali | Portfolio</title>
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Background Canvas for Three.js -->
+    <div id="webgl-container"></div>
+
+    <header>
+        <nav class="navbar container">
+            <div class="logo">Tajali</div>
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="certificate.html">Certificates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section container">
+            <div class="hero-content glass-panel">
+                <h4>Hello, I'm</h4>
+                <h1 class="hero-title">Tajali</h1>
+                <p class="hero-subtitle">Transforming Data & Code into Impactful Solutions</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="profile.html" class="btn btn-outline">About Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Section -->
+        <section id="summary" class="summary-section container">
+            <div class="summary-grid">
+                <div class="summary-text glass-panel">
+                    <h2>Who am I?</h2>
+                    <p>I am a passionate individual focusing on Data Science, Data Analytics, and Web/App Development. I thrive on solving complex problems with elegant code and actionable data insights.</p>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-card glass-panel">
+                        <h3 class="stat-number">3+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <h3 class="stat-number">20+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <h3 class="stat-number">15+</h3>
+                        <p>Certificates</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section container">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="projects-grid" id="projectsContainer">
+                <!-- Projects will be rendered here by JS -->
+            </div>
+        </section>
+
+        <!-- Comments Section -->
+        <section id="comments" class="comments-section container">
+            <h2 class="section-title">Leave a Comment</h2>
+            <div class="comments-wrapper glass-panel">
+                <div class="comments-form-container">
+                    <form id="commentForm">
+                        <input type="text" id="commentName" placeholder="Your Name" required>
+                        <textarea id="commentMsg" placeholder="Your message..." rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary" id="submitCommentBtn">Post Comment</button>
+                    </form>
+                </div>
+                <div class="comments-list-container">
+                    <div class="comments-list" id="commentsList">
+                        <!-- Comments will be rendered here -->
+                        <div class="loading-text">Loading comments...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Template -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content rendered by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/github-api.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/three-scene.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/comments.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Tajali</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <div class="logo">Tajali</div>
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                <li><a href="certificate.html">Certificates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-top-padding">
+        <!-- About Section -->
+        <section id="about" class="container">
+            <div class="about-wrapper glass-panel">
+                <div class="about-image-container">
+                    <img src="https://ui-avatars.com/api/?name=Tajali&size=300&background=0D8ABC&color=fff" alt="Tajali" class="about-image">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title" style="text-align: left;">About Me</h2>
+                    <p class="about-bio">I'm Tajali, a Data Analyst, Data Scientist, and Web/App Developer. I build advance analytical solutions and interactive web applications. I focus on creating a digital experience that stands out through unique design and seamless interaction.</p>
+                    <div class="skills-container">
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Three.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section id="experience" class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline" id="experienceTimeline">
+                <!-- Timeline items rendered by JS -->
+            </div>
+        </section>
+
+        <!-- Achievements Grid -->
+        <section id="achievements" class="container">
+            <h2 class="section-title">Prestasi</h2>
+            <div class="achievements-grid" id="achievementsContainer">
+                <!-- Achievements rendered by JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Template for Achievements -->
+    <div class="modal-overlay" id="achievementModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeAchieModal">&times;</button>
+            <div class="modal-body" id="achieModalBody">
+                <!-- Modal content rendered by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/github-api.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

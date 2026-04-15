@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "Google Data Analytics Professional Certificate",
+    "issuer": "Coursera",
+    "date": "2023",
+    "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800",
+    "credentialUrl": "#",
+    "category": "Data Analyst"
+  },
+  {
+    "id": "2",
+    "title": "Full-Stack Web Development",
+    "issuer": "Udemy",
+    "date": "2022",
+    "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800",
+    "credentialUrl": "#",
+    "category": "App/Web"
+  }
+]

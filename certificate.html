@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates | Tajali</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/certificate.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <div class="logo">Tajali</div>
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="certificate.html" class="active">Certificates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-top-padding">
+        <section class="container">
+            <h1 class="section-title">My Certificates</h1>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="All">All</button>
+                <button class="filter-btn" data-filter="Data Analyst">Data Analyst</button>
+                <button class="filter-btn" data-filter="Data Science">Data Science</button>
+                <button class="filter-btn" data-filter="App/Web">App/Web</button>
+            </div>
+
+            <div class="cert-grid" id="certContainer">
+                <!-- Certificates rendered here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Full Size Image Modal -->
+    <div class="modal-overlay" id="imageModal">
+        <div class="modal-content img-modal-content">
+            <button class="modal-close" id="closeImgModal">&times;</button>
+            <img src="" id="fullSizeImg" alt="Certificate Full Size" class="full-img">
+            <div class="cert-modal-info">
+                <h3 id="certModalTitle"></h3>
+                <p id="certModalIssuer"></p>
+                <a href="#" id="certModalLink" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">Verify Credential</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/github-api.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/certificate.js"></script>
+</body>
+</html>

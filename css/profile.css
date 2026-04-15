@@ -1,0 +1,191 @@
+.page-top-padding {
+    padding-top: 100px;
+}
+
+/* About Section */
+.about-wrapper {
+    display: flex;
+    gap: 3rem;
+    padding: 3rem;
+    align-items: center;
+}
+
+.about-image-container {
+    flex: 0 0 300px;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--accent-purple);
+}
+
+.about-bio {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-tag {
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid var(--accent-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-family: var(--font-heading);
+    transition: all var(--transition-fast);
+}
+
+.skill-tag:hover {
+    background: var(--accent-blue);
+    color: var(--bg-dark);
+    transform: translateY(-3px);
+}
+
+/* Experience Timeline (LinkedIn Style) */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* The vertical line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--border-color);
+    top: 0;
+    bottom: 0;
+    left: 40px; /* Aligned to the left for standard profile view */
+}
+
+.timeline-item {
+    padding: 10px 40px 40px 90px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+}
+
+/* The dot */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: auto;
+    left: 33px;
+    background-color: var(--bg-dark);
+    border: 3px solid var(--accent-blue);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: background-color var(--transition-fast);
+}
+
+.timeline-item:hover::after {
+    background-color: var(--accent-blue);
+}
+
+.timeline-content {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    gap: 1.5rem;
+    transition: transform var(--transition-normal);
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    border-color: var(--accent-purple);
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: contain;
+    background: white;
+    padding: 5px;
+}
+
+.exp-details h3 {
+    color: var(--accent-blue);
+    margin-bottom: 0.2rem;
+}
+
+.exp-details h4 {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.exp-date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Achievements */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-normal);
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-purple);
+    box-shadow: 0 10px 20px rgba(124, 58, 237, 0.2);
+}
+
+.achievement-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.achievement-info {
+    padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .timeline::after {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+        padding-right: 0;
+    }
+    
+    .timeline-item::after {
+        left: 13px;
+    }
+    
+    .timeline-content {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "company": "Tech Solutions Inc.",
+    "logo": "https://ui-avatars.com/api/?name=TS&background=0a0f1c&color=00d4ff",
+    "position": "Data Scientist",
+    "startYear": "2023",
+    "endYear": "Present",
+    "description": "Leading data initiatives for product analytics.\n- Built ML models for user segmentation.\n- Reduced processing time by 40% through pipeline optimization."
+  },
+  {
+    "id": "2",
+    "company": "Digital Agency",
+    "logo": "https://ui-avatars.com/api/?name=DA&background=0a0f1c&color=7c3aed",
+    "position": "Web Developer Intern",
+    "startYear": "2022",
+    "endYear": "2023",
+    "description": "Developed interactive web applications for clients.\n- Maintained responsive front-end components.\n- Integrated RESTful APIs."
+  }
+]

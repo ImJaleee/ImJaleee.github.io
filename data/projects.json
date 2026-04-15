@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1",
+    "title": "E-Commerce Analytics Dashboard",
+    "description": "Interactive data dashboard for tracking product sales and customer lifetime value.",
+    "fullDescription": "A comprehensive internal tool built with React and Python that takes raw sales data and transforms it into actionable insights. Features include real-time data streaming, interactive charts, and predictive analytics for inventory management.",
+    "media": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+    },
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/ImJaleee"
+      }
+    ],
+    "tags": [
+      "Python",
+      "Data Science",
+      "React"
+    ],
+    "featured": true
+  },
+  {
+    "id": "2",
+    "title": "Customer Churn Prediction Model",
+    "description": "Machine learning model predicting customer churn with 92% accuracy.",
+    "fullDescription": "Developed and deployed a Random Forest classification model to identify at-risk customers. Integrated with the company's CRM to send automated retention offers.",
+    "media": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+    },
+    "links": [],
+    "tags": [
+      "Machine Learning",
+      "Python",
+      "Scikit-Learn"
+    ],
+    "featured": true
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "title": "1st Place National Hackathon",
+    "date": "2024",
+    "description": "Won first place among 200+ teams by building an AI-powered accessibility tool.",
+    "media": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800"
+    },
+    "links": [
+      {
+        "label": "View Article",
+        "url": "#"
+      }
+    ]
+  }
+]
