@@ -9,12 +9,12 @@
     "description": "Leading data initiatives for product analytics.\n- Built ML models for user segmentation.\n- Reduced processing time by 40% through pipeline optimization."
   },
   {
-    "id": "2",
-    "company": "Digital Agency",
+    "company": "LindungiHutan",
     "logo": "https://ui-avatars.com/api/?name=DA&background=0a0f1c&color=7c3aed",
-    "position": "Web Developer Intern",
+    "position": "Data Analyst Intern",
     "startYear": "2022",
     "endYear": "2023",
-    "description": "Developed interactive web applications for clients.\n- Maintained responsive front-end components.\n- Integrated RESTful APIs."
+    "description": "LindungiHutan is a crowdfunding platform dedicated to environmental conservation and empowering coastal communities in Indonesia. Since 2016, it has partnered with local farmers and supporters to plant trees, raise awareness, and address flooding, erosion, and deforestation issues.\n\nMy Task:\n• Reviewing data and making recommendations based on findings\n• Identifying potential issues or problems with the company's current business model\n• Creating reports and charts to help stakeholders understand the data\n• Conducting research to gather data on specific topics or industries\n• Recommending changes to products or services based on customer feedback\n• Analyzing customer data to identify patterns or opportunities for improvement\n• Collecting, analyzing, and storing data in an organized fashion to ensure that it can be retrieved efficiently when needed\n• Reviewing data for accuracy and ensuring that it is presented in a clear and concise  manner",
+    "id": "2"
   }
 ]
