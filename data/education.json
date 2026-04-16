@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "school": "Universitas Indonesia",
+    "degree": "Bachelor of Computer Science",
+    "year": "2019 - 2023",
+    "description": "Lulus dengan predikat Cum Laude (GPA: 3.85/4.00). Fokus studi pada Artificial Intelligence (AI) dan Machine Learning. Aktif dalam BEM Fasilkom UI sebagai anggota divisi Riset dan Teknologi, serta sering mengikuti kompetisi Hackathon tingkat nasional."
+  },
+  {
+    "id": 2,
+    "school": "SMA Negeri 1 Jakarta",
+    "degree": "Ilmu Pengetahuan Alam (IPA)",
+    "year": "2016 - 2019",
+    "description": "Lulusan terbaik jurusan IPA angkatan 2019. Aktif dalam klub Olimpiade Komputer dan berhasil masuk ke tingkat Provinsi. Menguasai dasar algoritma dan pemrograman C++ sejak bangku SMA."
+  }
+]

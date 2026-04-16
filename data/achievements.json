@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1",
+    "title": "1st Place - National AI Hackathon",
+    "date": "2024",
+    "description": "Meraih juara pertama dari 200+ tim yang berkompetisi dengan membangun aplikasi aksesibilitas untuk disabilitas berbasis Computer Vision.",
+    "media": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800"
+    },
+    "links": [
+      {
+        "label": "Lihat Dokumentasi",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Best Data Science Project UI",
+    "date": "2023",
+    "description": "Mendapatkan penghargaan project akhir terbaik di fakultas, menggunakan Natural Language Processing untuk mendeteksi berita hoaks berbahasa Indonesia.",
+    "media": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=800"
+    },
+    "links": []
+  },
+  {
+    "id": "3",
+    "title": "Finalist Web Design Competition",
+    "date": "2022",
+    "description": "Masuk top 5 besar tingkat nasional dalam mendesain dan men-develop website company profile interaktif dengan React.js.",
+    "media": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
+    },
+    "links": []
+  }
+]

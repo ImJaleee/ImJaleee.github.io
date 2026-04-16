@@ -1,0 +1,258 @@
+/* Profile Layout */
+.profile-layout {
+    display: flex;
+    gap: 2.5rem;
+    padding-top: 100px; /* offset for navbar */
+    position: relative;
+    align-items: flex-start;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    width: 180px;
+    position: sticky;
+    top: 30vh;
+    padding-right: 1.5rem;
+    border-right: 1px solid var(--border-color);
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar-menu a {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all var(--transition-fast);
+    display: block;
+}
+
+.sidebar-menu a:hover {
+    color: var(--accent-blue);
+    transform: translateX(5px);
+}
+
+.sidebar-menu a.active {
+    color: var(--text-primary);
+    font-weight: 700;
+    transform: translateX(10px);
+}
+.sidebar-menu a.active::before {
+    content: "• ";
+    color: var(--accent-blue);
+}
+
+/* Content Area */
+.profile-content {
+    flex: 1;
+    min-width: 0; /* Prevents overflow */
+    padding-bottom: 6rem;
+}
+
+.profile-section {
+    padding: 1rem 0; /* Override the global 6rem section padding */
+    margin-bottom: 1.5rem;
+    scroll-margin-top: 100px; /* For scroll-spy offset */
+}
+.profile-section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* About Wrapper */
+.about-wrapper {
+    display: flex;
+    gap: 3rem;
+    padding: 3rem;
+    align-items: center;
+}
+
+.about-image-container {
+    flex-shrink: 0;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--bg-main);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-bio {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill-tag {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--accent-blue);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    font-family: var(--font-heading);
+}
+
+/* Timeline Components */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin-top: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 3rem;
+    cursor: default;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--bg-main);
+    border: 3px solid var(--accent-blue);
+    z-index: 1;
+    transition: all var(--transition-fast);
+}
+
+.timeline-item:hover::before {
+    background: var(--accent-blue);
+    box-shadow: 0 0 10px var(--accent-blue);
+}
+
+.timeline-content {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-soft);
+    transition: transform var(--transition-normal);
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.timeline-date {
+    color: var(--accent-purple);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    font-family: var(--font-heading);
+}
+
+.timeline-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.timeline-company {
+    color: var(--accent-blue);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.timeline-desc {
+    color: var(--text-secondary);
+}
+
+/* Achievements Grid */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.achievement-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-soft);
+    transition: all var(--transition-normal);
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.1);
+}
+
+.achie-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fbbf24; /* gold */
+}
+
+.achie-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.achie-year {
+    color: var(--accent-purple);
+    font-size: 0.9rem;
+    font-family: var(--font-heading);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .profile-layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .sidebar-menu {
+        display: none;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-container {
+        justify-content: center;
+    }
+}
