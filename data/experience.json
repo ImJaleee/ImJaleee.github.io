@@ -1,12 +1,12 @@
 [
   {
-    "id": "1",
-    "company": "GoTo Group",
+    "company": "GoTo Group 12",
     "logo": "https://ui-avatars.com/api/?name=GT&background=0a0f1c&color=00d4ff",
     "position": "Data Scientist Intern",
     "startYear": "2023",
     "endYear": "Present",
-    "description": "Bekerja dalam tim analitik data untuk mengolah Big Data menggunakan Python dan SQL.\n- Membangun model machine learning untuk segmentasi pelanggan.\n- Meningkatkan efisiensi pipeline ETL hingga 30%."
+    "description": "Bekerja dalam tim analitik data untuk mengolah Big Data menggunakan Python dan SQL.\n- Membangun model machine learning untuk segmentasi pelanggan.\n- Meningkatkan efisiensi pipeline ETL hingga 30%.",
+    "id": "1"
   },
   {
     "id": "2",
