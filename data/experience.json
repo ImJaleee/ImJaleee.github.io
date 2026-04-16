@@ -1,56 +1,47 @@
 [
   {
-    "company": "GoTo Group 123",
-    "logo": "https://ui-avatars.com/api/?name=GT&background=0a0f1c&color=00d4ff",
-    "position": "Data Scientist Intern",
-    "startYear": "2023",
+    "id": "1",
+    "company": "LindungiHutan",
+    "logo": "https://ui-avatars.com/api/?name=LH&background=0a0f1c&color=7c3aed",
+    "position": "Data Analyst & Sales Performance",
+    "startYear": "2025",
     "endYear": "Present",
-    "description": "Bekerja dalam tim analitik data untuk mengolah Big Data menggunakan Python dan SQL.\n- Membangun model machine learning untuk segmentasi pelanggan.\n- Meningkatkan efisiensi pipeline ETL hingga 30%.",
-    "id": "1"
+    "description": "LindungiHutan is an environmental platform focusing on reforestation and sustainable ecosystem management.\n\nMy Task:\n• Developing and managing real-time sales performance dashboards using Looker Studio to monitor key KPIs such as conversion rates and pipeline activity.\n• Designing and managing a sales database of 1000+ companies using SQL and spreadsheets to ensure data integrity and accuracy.\n• Automating data processing and reporting workflows using AppSheet and scripting, increasing team efficiency by approximately 70%.\n• Preparing weekly, monthly, and annual performance reports to provide data-driven insights for business strategy planning.\n• Developing data-based lead prioritization models and segmentation to improve targeting effectiveness and conversion rates.\n• Performing data cleaning, validation, and transformation to maintain high-quality data for operational analysis.\n• Translating complex business requirements into applicable data-driven solutions to improve decision-making quality.\n• Developing a salesperson workload calculation system based on lead volume and performance history to optimize task distribution."
   },
   {
     "id": "2",
+    "company": "PinMe (PKM)",
+    "logo": "https://ui-avatars.com/api/?name=PM&background=0a0f1c&color=7c3aed",
+    "position": "Full-Stack Developer",
+    "startYear": "2024",
+    "endYear": "2024",
+    "description": "PinMe is an innovative project focused on integrating Augmented Reality for informational media.\n\nMy Task:\n• Designing and managing the PinMe admin application and website using Laravel and Kotlin to ensure optimal performance and seamless user experience.\n• Developing interactive dashboards on the web admin to improve user management efficiency and data visualization.\n• Leading cross-functional teams in application development, marketing strategies, and Augmented Reality (AR) initiatives to drive market visibility."
+  },
+  {
+    "id": "3",
+    "company": "PT. Kalimantan Prima Persada (SPUT)",
+    "logo": "https://ui-avatars.com/api/?name=KPP&background=0a0f1c&color=7c3aed",
+    "position": "Full-Stack Developer Intern",
+    "startYear": "2024",
+    "endYear": "2024",
+    "description": "PT. Kalimantan Prima Persada is a leading integrated mining service provider in Indonesia.\n\nMy Task:\n• Developing and maintaining the POINS (Port Operation Integrated System) application, adding 11+ mobile features (React Native) and 40+ web features (ASP.NET).\n• Enhancing port functionality through real-time tracking of barging processes, shipping status, and area scheduling.\n• Integrating weather forecasts, CCTV monitoring, and senslog data analysis to support port operational decisions.\n• Building Power BI dashboards for real-time jetty and barge scheduling to improve inter-team coordination and transparency.\n• Creating the 'Water Bending App SPUT' to monitor water levels at the jetty, reducing incident response time by 10%."
+  },
+  {
+    "id": "4",
+    "company": "DigitalBanua",
+    "logo": "https://ui-avatars.com/api/?name=DB&background=0a0f1c&color=7c3aed",
+    "position": "Founder",
+    "startYear": "2023",
+    "endYear": "2024",
+    "description": "DigitalBanua is a digital agency initiative aimed at empowering local MSMEs through digitalization services.\n\nMy Task:\n• Pioneering strategic initiatives to drive sustainable business growth aligned with environmental and social missions.\n• Positioning the company as a pioneer in sustainable business practices within the local digital ecosystem.\n• Successfully converting over 370 MSMEs into active clients by providing digitalization services such as product photography and web development."
+  },
+  {
+    "id": "5",
     "company": "LindungiHutan",
     "logo": "https://ui-avatars.com/api/?name=LH&background=0a0f1c&color=7c3aed",
     "position": "Data Analyst Intern",
     "startYear": "2022",
     "endYear": "2023",
-    "description": "LindungiHutan is a crowdfunding platform dedicated to environmental conservation and empowering coastal communities in Indonesia. Since 2016, it has partnered with local farmers and supporters to plant trees, raise awareness, and address flooding, erosion, and deforestation issues.\n\nMy Task:\n• Reviewing data and making recommendations based on findings\n• Identifying potential issues or problems with the company's current business model\n• Creating reports and charts to help stakeholders understand the data\n• Conducting research to gather data on specific topics or industries\n• Recommending changes to products or services based on customer feedback\n• Analyzing customer data to identify patterns or opportunities for improvement\n• Collecting, analyzing, and storing data in an organized fashion to ensure that it can be retrieved efficiently when needed\n• Reviewing data for accuracy and ensuring that it is presented in a clear and concise  manner"
-  },
-  {
-    "company": "asdada",
-    "logo": "",
-    "position": "asd",
-    "startYear": "2021",
-    "endYear": "2022",
-    "description": "Teas",
-    "id": "1776295321833"
-  },
-  {
-    "company": "Test",
-    "logo": "",
-    "position": "Data Analyst Intern",
-    "startYear": "2021",
-    "endYear": "2022",
-    "description": "Testtt",
-    "id": "1776295383601"
-  },
-  {
-    "id": "4",
-    "company": "Digital Agency Nusantara",
-    "logo": "https://ui-avatars.com/api/?name=DA&background=0a0f1c&color=7c3aed",
-    "position": "Junior Web Developer",
-    "startYear": "2021",
-    "endYear": "2023",
-    "description": "Mengembangkan website dan web app untuk berbagai klien UMKM dan Korporat.\n- Bertanggung jawab penuh terhadap slicing UI/UX menggunakan React dan TailwindCSS.\n- Integrasi REST API dari sisi backend ke frontend."
-  },
-  {
-    "id": "5",
-    "company": "Data Science Indonesia",
-    "logo": "https://ui-avatars.com/api/?name=DS&background=0a0f1c&color=10b981",
-    "position": "Research Assistant Mentee",
-    "startYear": "2020",
-    "endYear": "2021",
-    "description": "Berpartisipasi dalam penelitian open source mengenai sentimen analisis di media sosial.\n- Scraping data dari platform X (Twitter).\n- Membersihkan dan mempersiapkan dataset."
+    "description": "LindungiHutan is a crowdfunding platform dedicated to environmental conservation and empowering coastal communities.\n\nMy Task:\n• Improving B2B sales efficiency by developing customer personas based on client history for more targeted marketing approaches.\n• Analyzing and presenting strategic insights to the Business Team, Campaign Team, and CEO using Python-based database analysis.\n• Collecting and managing data from over 600 companies listed on the Indonesia Stock Exchange (BEI) to ensure systematic data integration."
   }
 ]
