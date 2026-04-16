@@ -1,40 +1,89 @@
 [
   {
     "id": "1",
-    "title": "1st Place - National AI Hackathon",
-    "date": "2024",
-    "description": "Meraih juara pertama dari 200+ tim yang berkompetisi dengan membangun aplikasi aksesibilitas untuk disabilitas berbasis Computer Vision.",
+    "title": "Top 24 Finalist - Arutmint Got Talent 2024",
+    "date": "Sep 2024",
+    "description": "Selected as a top 24 finalist in the national business plan competition organized by Arutmint Got Talent 2024.",
     "media": {
       "type": "image",
-      "url": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800"
+      "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32b7?auto=format&fit=crop&q=80&w=800"
     },
-    "links": [
-      {
-        "label": "Lihat Dokumentasi",
-        "url": "#"
-      }
-    ]
+    "links": []
   },
   {
     "id": "2",
-    "title": "Best Data Science Project UI",
-    "date": "2023",
-    "description": "Mendapatkan penghargaan project akhir terbaik di fakultas, menggunakan Natural Language Processing untuk mendeteksi berita hoaks berbahasa Indonesia.",
+    "title": "2nd Place Winner - SPUT Convention 2024",
+    "date": "Jun 2024",
+    "description": "Won 2nd place in the DT category at the SPUT Convention by PT Kalimantan Prima Persada. Developed 'Water Bender', an IoT-based water detection system equipped with alarms and a web dashboard for port monitoring.",
     "media": {
       "type": "image",
-      "url": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=800"
+      "url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800"
     },
     "links": []
   },
   {
     "id": "3",
-    "title": "Finalist Web Design Competition",
-    "date": "2022",
-    "description": "Masuk top 5 besar tingkat nasional dalam mendesain dan men-develop website company profile interaktif dengan React.js.",
+    "title": "Grantee - Program Dosen Wajib Meneliti (PDWM)",
+    "date": "May 2024",
+    "description": "Selected for research funding by LPPM Universitas Lambung Mangkurat for the project titled 'Penerapan Algoritma Machine Learning pada Prediksi Komplikasi Infark Miokard Akut'.",
     "media": {
       "type": "image",
-      "url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
+      "url": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800"
     },
     "links": []
+  },
+  {
+    "id": "4",
+    "title": "Grantee - Program Dosen Wajib Pengabdian Kepada Masyarakat (PDWA)",
+    "date": "May 2024",
+    "description": "Secured funding from LPPM Universitas Lambung Mangkurat for a community service project focusing on competency exam mentoring and presentation training for junior high school students in Banjarbaru.",
+    "media": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800"
+    },
+    "links": []
+  },
+  {
+    "id": "5",
+    "title": "Grantee & PIMNAS Finalist - PKM-K 2024",
+    "date": "May 2024",
+    "description": "Passed the national funding program by the Ministry of Research and Technology and advanced to PIMNAS UNAIR 2024 with 'PinMe', a marker-based Augmented Reality application for 3D visualization on banners and posters.",
+    "media": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1617802690992-15d93263d3a9?auto=format&fit=crop&q=80&w=800"
+    },
+    "links": []
+  },
+  {
+    "id": "6",
+    "title": "Publication - IJEEEMI Journal",
+    "date": "Nov 2024",
+    "description": "Published 'The Impactness of SMOTE as Imbalance Class Handling for Myocardial Infarction Complication Classification'. The study evaluates ML models and data imputation techniques, demonstrating that Iterative Imputation combined with SVM achieves 100% predictive accuracy.",
+    "media": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&q=80&w=800"
+    },
+    "links": [
+      {
+        "label": "Read Paper",
+        "url": "https://ijeeemi.org/index.php/ijeeemi/article/view/13"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Publication - JITEKI Journal",
+    "date": "Sep 2024",
+    "description": "Published 'The Effectiveness of Data Imputations on Myocardial Infarction Complication Classification'. This research highlights the influence of data imputation and hyperparameter tuning (via Bayesian Optimization) on handling missing medical data, proving SVM's high efficacy.",
+    "media": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=800"
+    },
+    "links": [
+      {
+        "label": "Read Paper",
+        "url": "https://journal.uad.ac.id/index.php/JITEKI/article/view/29479"
+      }
+    ]
   }
 ]
