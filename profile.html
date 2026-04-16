@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile | Tajali</title>
+    <title>Profile | Ahmad Tajali</title>
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/profile.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar container">
-            <div class="logo">Tajali</div>
-            <button class="menu-btn" id="menuBtn">☰</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html" class="active">Profile</a></li>
-                <li><a href="certificate.html">Certificates</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Soft Background Ornaments -->
+    <div class="bg-ornament bg-ornament-1"></div>
+    <div class="bg-ornament bg-ornament-2"></div>
 
-    <main class="page-top-padding">
-        <!-- About Section -->
-        <section id="about" class="container">
-            <div class="about-wrapper glass-panel">
-                <div class="about-image-container">
-                    <img src="content/Kemeja%20item%201R.png" alt="Tajali" class="about-image">
-                </div>
-                <div class="about-content">
-                    <h2 class="section-title" style="text-align: left;">About Me</h2>
-                    <p class="about-bio">I'm Tajali, a Data Analyst, Data Scientist, and Web/App Developer. I build
-                        advance analytical solutions and interactive web applications. I focus on creating a digital
-                        experience that stands out through unique design and seamless interaction.</p>
-                    <div class="skills-container">
-                        <span class="skill-tag">Data Analysis</span>
-                        <span class="skill-tag">Data Science</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Web Development</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Three.js</span>
+    <div class="floating-nav-container">
+        <nav class="floating-nav">
+            <a href="index.html" aria-label="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+            </a>
+            <a href="profile.html" class="active">About</a>
+            <a href="projects.html">Project</a>
+            <a href="certificate.html">Certificates</a>
+        </nav>
+    </div>
+
+    <main class="profile-layout container">
+        <!-- Left Sidebar (Sticky Menu) -->
+        <aside class="sidebar-menu">
+            <ul id="scrollMenu">
+                <li><a href="#about" class="active">Introduction</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievement</a></li>
+            </ul>
+        </aside>
+
+        <!-- Right Content Area -->
+        <div class="profile-content">
+            <!-- Introduction Section -->
+            <section id="about" class="profile-section">
+                <div class="about-wrapper glass-panel">
+                    <div class="about-image-container">
+                        <img src="content/Kemeja%20item%201R.png" alt="Ahmad Tajali" class="about-image">
+                    </div>
+                    <div class="about-text">
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Introduction</h2>
+                        <p class="about-bio">I'm Ahmad Tajali, a Data Analyst, Data Scientist, and Web/App Developer. I build advanced analytical solutions and interactive web applications. I focus on creating a digital experience that stands out through modern design and seamless interaction.</p>
+                        <div class="skills-container" style="margin-top: 1.5rem;">
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">Data Science</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Web Development</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Machine Learning</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Experience Timeline -->
-        <section id="experience" class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline" id="experienceTimeline">
-                <!-- Timeline items rendered by JS -->
-            </div>
-        </section>
+            <!-- Experience Timeline -->
+            <section id="experience" class="profile-section">
+                <h2 class="section-title" style="text-align: left;">Experience</h2>
+                <div class="timeline" id="experienceTimeline">
+                    <!-- Timeline items rendered by JS -->
+                </div>
+            </section>
 
-        <!-- Achievements Grid -->
-        <section id="achievements" class="container">
-            <h2 class="section-title">Prestasi</h2>
-            <div class="achievements-grid" id="achievementsContainer">
-                <!-- Achievements rendered by JS -->
-            </div>
-        </section>
+            <!-- Education Timeline -->
+            <section id="education" class="profile-section">
+                <h2 class="section-title" style="text-align: left;">Education</h2>
+                <div class="timeline" id="educationTimeline">
+                    <!-- Education items rendered by JS -->
+                </div>
+            </section>
+
+            <!-- Achievements Grid -->
+            <section id="achievements" class="profile-section">
+                <h2 class="section-title" style="text-align: left;">Prestasi & Awards</h2>
+                <div class="achievements-grid" id="achievementsContainer">
+                    <!-- Achievements rendered by JS -->
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Modal Template for Achievements -->
@@ -79,5 +100,4 @@
     <script src="js/app.js"></script>
     <script src="js/profile.js"></script>
 </body>
-
 </html>

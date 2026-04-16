@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const saveCrudBtn = document.getElementById('saveCrudBtn');
 
     // State
-    let currentTab = 'projects'; // projects, experience, achievements, certificates
+    let currentTab = 'projects'; // projects, experience, education, achievements, certificates
     let currentData = [];
     let currentSha = null;
     let editingId = null;
@@ -106,8 +106,15 @@ document.addEventListener('DOMContentLoaded', () => {
             processFormData(currentTab, dataObj);
 
             // Fetch latest data to avoid Conflicts
-            const fileData = await GitHubAPI.getFile(`data/${currentTab}.json`);
-            let fileContent = fileData.content;
+            let fileData;
+            try {
+                fileData = await GitHubAPI.getFile(`data/${currentTab}.json`);
+            } catch (err) {
+                // If file doesn't exist, we create an empty array content
+                fileData = { content: [], sha: null };
+            }
+            
+            let fileContent = fileData.content || [];
             let currentShaToUse = fileData.sha;
 
             if (editingId) {
@@ -158,8 +165,22 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error(error);
             tableContainer.innerHTML = `<div style="color:#ef4444; padding:2rem;">Error loading data for ${tab}. Is repository setup correctly?</div>`;
+            currentData = [];
+            currentSha = null;
+            // Provide a way to initialize it:
+            tableContainer.innerHTML += `<br><button class="btn btn-outline" onclick="initEmptyFile('${tab}')">Initialize Empty File</button>`;
         }
     }
+
+    window.initEmptyFile = async (tab) => {
+        try {
+            await GitHubAPI.updateFile(`data/${tab}.json`, [], null, `Initialize ${tab}.json`);
+            alert('Initialized!');
+            loadDataForTab(tab);
+        } catch (e) {
+            alert('Initialization failed.');
+        }
+    };
 
     function renderTable(tab, data) {
         if (!data || data.length === 0) {
@@ -168,8 +189,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         let columns = [];
-        if (tab === 'projects') columns = ['Title', 'Description', 'Featured'];
+        if (tab === 'projects') columns = ['Title', 'Category', 'Featured'];
         if (tab === 'experience') columns = ['Company', 'Position', 'Start Year', 'End Year'];
+        if (tab === 'education') columns = ['School', 'Degree', 'Year'];
         if (tab === 'achievements') columns = ['Title', 'Date'];
         if (tab === 'certificates') columns = ['Title', 'Issuer', 'Category'];
 
@@ -186,8 +208,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         data.forEach(item => {
             let rowHtml = '';
-            if (tab === 'projects') rowHtml = `<td>${item.title || ''}</td><td>${excerpt(item.description)}</td><td>${item.featured ? 'Yes' : 'No'}</td>`;
+            if (tab === 'projects') rowHtml = `<td>${item.title || ''}</td><td>${item.category || ''}</td><td>${item.featured ? 'Yes' : 'No'}</td>`;
             if (tab === 'experience') rowHtml = `<td>${item.company || ''}</td><td>${item.position || ''}</td><td>${item.startYear || ''}</td><td>${item.endYear || ''}</td>`;
+            if (tab === 'education') rowHtml = `<td>${item.school || ''}</td><td>${item.degree || ''}</td><td>${item.year || ''}</td>`;
             if (tab === 'achievements') rowHtml = `<td>${item.title || ''}</td><td>${item.date || ''}</td>`;
             if (tab === 'certificates') rowHtml = `<td>${item.title || ''}</td><td>${item.issuer || ''}</td><td>${item.category || ''}</td>`;
 
@@ -247,10 +270,26 @@ document.addEventListener('DOMContentLoaded', () => {
         if (tab === 'projects') {
             html = `
                 <div class="form-group"><label>Title</label><input type="text" class="form-control" name="title" value="${v('title')}" required></div>
-                <div class="form-group"><label>Short Description</label><input type="text" class="form-control" name="description" value="${v('description')}" required></div>
-                <div class="form-group"><label>Full Description</label><textarea class="form-control" name="fullDescription">${v('fullDescription')}</textarea></div>
-                <div class="form-group"><label>Media Image URL</label><input type="text" class="form-control" name="mediaUrl" value="${item && item.media ? item.media.url : ''}"></div>
+                <div class="form-group"><label>Short Description (for card)</label><input type="text" class="form-control" name="description" value="${v('description')}" required></div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select class="form-control" name="category">
+                        <option value="Data Analyst" ${v('category') === 'Data Analyst' ? 'selected' : ''}>Data Analyst</option>
+                        <option value="Data Science" ${v('category') === 'Data Science' ? 'selected' : ''}>Data Science</option>
+                        <option value="Web" ${v('category') === 'Web' ? 'selected' : ''}>Web/App</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>Year</label><input type="text" class="form-control" name="year" value="${v('year')}"></div>
+                
+                <!-- Expanded Details -->
+                <div class="form-group"><label>Overview</label><textarea class="form-control" name="overview">${v('overview')}</textarea></div>
+                <div class="form-group"><label>Technologies Used (comma separated)</label><input type="text" class="form-control" name="techUsed" value="${v('techUsed')}"></div>
+                <div class="form-group"><label>Outcome / Result</label><textarea class="form-control" name="outcome">${v('outcome')}</textarea></div>
+                <div class="form-group"><label>Challenges & Learnings</label><textarea class="form-control" name="challenges">${v('challenges')}</textarea></div>
+
                 <div class="form-group"><label>Tags (comma separated)</label><input type="text" class="form-control" name="tags" value="${item && item.tags ? item.tags.join(', ') : ''}"></div>
+                <div class="form-group"><label>Media Image URL (Optional)</label><input type="text" class="form-control" name="mediaUrl" value="${item && item.media ? item.media.url : ''}"></div>
+                <div class="form-group"><label>Project Link URL (Optional)</label><input type="text" class="form-control" name="projectUrl" value="${item && item.links && item.links[0] ? item.links[0].url : ''}"></div>
                 <div class="form-group">
                     <label>Featured?</label>
                     <select class="form-control" name="featured">
@@ -265,9 +304,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="form-group"><label>Company Logo URL</label><input type="text" class="form-control" name="logo" value="${v('logo')}"></div>
                 <div class="form-group"><label>Position</label><input type="text" class="form-control" name="position" value="${v('position')}" required></div>
                 <div style="display:flex; gap:1rem;">
-                    <div class="form-group" style="flex:1;"><label>Start Year</label><input type="text" class="form-control" name="startYear" value="${v('startYear')}"></div>
-                    <div class="form-group" style="flex:1;"><label>End Year</label><input type="text" class="form-control" name="endYear" value="${v('endYear')}"></div>
+                    <div class="form-group" style="flex:1;"><label>Start Month/Year</label><input type="text" class="form-control" name="startYear" value="${v('startYear')}" placeholder="e.g. Jan 2023"></div>
+                    <div class="form-group" style="flex:1;"><label>End Month/Year</label><input type="text" class="form-control" name="endYear" value="${v('endYear')}" placeholder="e.g. Present"></div>
                 </div>
+                <div class="form-group"><label>Description</label><textarea class="form-control" name="description">${v('description')}</textarea></div>
+            `;
+        } else if (tab === 'education') {
+            html = `
+                <div class="form-group"><label>School/University</label><input type="text" class="form-control" name="school" value="${v('school')}" required></div>
+                <div class="form-group"><label>Degree/Major</label><input type="text" class="form-control" name="degree" value="${v('degree')}" required></div>
+                <div class="form-group"><label>Year</label><input type="text" class="form-control" name="year" value="${v('year')}" placeholder="e.g. 2018 - 2022"></div>
                 <div class="form-group"><label>Description</label><textarea class="form-control" name="description">${v('description')}</textarea></div>
             `;
         } else if (tab === 'achievements') {
@@ -309,6 +355,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (dataObj.mediaUrl) {
                 dataObj.media = { type: 'image', url: dataObj.mediaUrl };
                 delete dataObj.mediaUrl;
+            }
+            if (dataObj.projectUrl) {
+                dataObj.links = [{ label: 'View Project', url: dataObj.projectUrl }];
+                delete dataObj.projectUrl;
             }
         } else if (tab === 'achievements') {
              if (dataObj.mediaUrl) {

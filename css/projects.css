@@ -1,0 +1,108 @@
+/* Projects Filter */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-btn {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    color: var(--text-secondary);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+    box-shadow: var(--shadow-soft);
+    color: var(--accent-blue);
+    border-color: var(--accent-blue);
+}
+
+.filter-btn.active {
+    background: var(--gradient-primary);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+/* Modal Split Detail for Projects */
+.project-detail-modal {
+    max-width: 1000px;
+}
+
+.project-header-info {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.project-header-info h2 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.project-meta {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--accent-purple);
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.project-detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    text-align: left;
+}
+
+.project-section-title {
+    font-size: 1.2rem;
+    color: var(--accent-blue);
+    margin-bottom: 0.8rem;
+    margin-top: 2rem;
+}
+.project-section-title:first-child {
+    margin-top: 0;
+}
+
+.project-text-content {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.tech-stack-container {
+    background: rgba(59, 130, 246, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-item {
+    background: white;
+    border: 1px solid var(--border-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .project-detail-grid {
+        grid-template-columns: 1fr;
+    }
+}

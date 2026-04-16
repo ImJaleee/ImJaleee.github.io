@@ -1,41 +1,95 @@
 [
   {
     "id": "1",
-    "title": "E-Commerce Analytics Dashboard",
-    "description": "Interactive data dashboard for tracking product sales and customer lifetime value.",
-    "fullDescription": "A comprehensive internal tool built with React and Python that takes raw sales data and transforms it into actionable insights. Features include real-time data streaming, interactive charts, and predictive analytics for inventory management.",
+    "title": "Sistem Deteksi Churn Pelanggan",
+    "description": "Dashboard interaktif berbasis Machine Learning untuk memprediksi probabilitas pelanggan churn.",
+    "fullDescription": "Aplikasi ini memadukan backend Python (FastAPI) dengan frontend React. Menggunakan Random Forest Classifier untuk memberikan klasifikasi status pelanggan secara real-time. Pipeline terintegrasi dengan database PostgreSQL untuk mengamankan data pengguna komersial.",
     "media": {
       "type": "image",
       "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
     },
     "links": [
       {
-        "label": "GitHub",
+        "label": "Github Repository",
         "url": "https://github.com/ImJaleee"
+      },
+      {
+        "label": "Live Demo",
+        "url": "#"
       }
     ],
     "tags": [
+      "Machine Learning",
+      "React",
       "Python",
-      "Data Science",
-      "React"
+      "Data Science"
     ],
     "featured": true
   },
   {
     "id": "2",
-    "title": "Customer Churn Prediction Model",
-    "description": "Machine learning model predicting customer churn with 92% accuracy.",
-    "fullDescription": "Developed and deployed a Random Forest classification model to identify at-risk customers. Integrated with the company's CRM to send automated retention offers.",
+    "title": "Aplikasi Kasir UMKM (POS)",
+    "description": "Sistem aplikasi point-of-sale modern untuk UMKM dengan fitur laporan penjualan detail.",
+    "fullDescription": "Point of Sales (POS) yang dirancang khusus untuk memenuhi kebutuhan toko kelontong dan coffee shop. Menawarkan manajemen stok secara langsung (real-time) menggunakan Firebase dan antarmuka UI minimalis dari TailwindCSS.",
     "media": {
       "type": "image",
-      "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+      "url": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800"
     },
-    "links": [],
+    "links": [
+      {
+        "label": "Lihat Code",
+        "url": "#"
+      }
+    ],
     "tags": [
-      "Machine Learning",
-      "Python",
-      "Scikit-Learn"
+      "Web Dev",
+      "TailwindCSS",
+      "Firebase"
     ],
     "featured": true
+  },
+  {
+    "id": "3",
+    "title": "Analisa Data Crypto Harian",
+    "description": "Script eksploratori data analisis pergerakan aset kripto menggunakan pandas dan matplotlib.",
+    "fullDescription": "Project open source untuk menganalisa volatilitas koin kripto di market Binance. Skrip otomatis mengambil data melalui API, memfilter anomali, lalu membangun grafik pola investasi dalam file laporan PDF secara instan.",
+    "media": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&q=80&w=800"
+    },
+    "links": [
+      {
+        "label": "Jupyter Notebook",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "Data Analyst",
+      "Pandas",
+      "Python"
+    ],
+    "featured": true
+  },
+  {
+    "id": "4",
+    "title": "Katalog Properti Elegan",
+    "description": "Website listing properti elit dengan animasi interaktif dan fitur filtering kompleks.",
+    "fullDescription": "UI/UX fokus pada luxury properties. Dibangun menggunakan Next.js dan Framer Motion. Project ini menggunakan Contentful sebagai Headless CMS, membuat upload konten terbaru dari admin properti tanpa perlu sentuhan coding.",
+    "media": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800"
+    },
+    "links": [
+      {
+        "label": "Live Web",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "Next.js",
+      "Web Dev",
+      "Framer Motion"
+    ],
+    "featured": false
   }
 ]

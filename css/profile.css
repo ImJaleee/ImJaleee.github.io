@@ -1,8 +1,69 @@
-.page-top-padding {
-    padding-top: 100px;
+/* Profile Layout */
+.profile-layout {
+    display: flex;
+    gap: 2.5rem;
+    padding-top: 100px; /* offset for navbar */
+    position: relative;
+    align-items: flex-start;
 }
 
-/* About Section */
+/* Sidebar Menu */
+.sidebar-menu {
+    width: 180px;
+    position: sticky;
+    top: 30vh;
+    padding-right: 1.5rem;
+    border-right: 1px solid var(--border-color);
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar-menu a {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all var(--transition-fast);
+    display: block;
+}
+
+.sidebar-menu a:hover {
+    color: var(--accent-blue);
+    transform: translateX(5px);
+}
+
+.sidebar-menu a.active {
+    color: var(--text-primary);
+    font-weight: 700;
+    transform: translateX(10px);
+}
+.sidebar-menu a.active::before {
+    content: "• ";
+    color: var(--accent-blue);
+}
+
+/* Content Area */
+.profile-content {
+    flex: 1;
+    min-width: 0; /* Prevents overflow */
+    padding-bottom: 6rem;
+}
+
+.profile-section {
+    padding: 1rem 0; /* Override the global 6rem section padding */
+    margin-bottom: 1.5rem;
+    scroll-margin-top: 100px; /* For scroll-spy offset */
+}
+.profile-section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* About Wrapper */
 .about-wrapper {
     display: flex;
     gap: 3rem;
@@ -11,181 +72,187 @@
 }
 
 .about-image-container {
-    flex: 0 0 300px;
+    flex-shrink: 0;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--bg-main);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .about-image {
     width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    border: 2px solid var(--accent-purple);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
 }
 
 .about-bio {
     font-size: 1.1rem;
-    margin-bottom: 2rem;
-    color: var(--text-secondary);
+    line-height: 1.8;
 }
 
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.8rem;
 }
 
 .skill-tag {
-    background: rgba(0, 212, 255, 0.1);
-    border: 1px solid var(--accent-blue);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--accent-blue);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(59, 130, 246, 0.2);
     font-family: var(--font-heading);
-    transition: all var(--transition-fast);
 }
 
-.skill-tag:hover {
-    background: var(--accent-blue);
-    color: var(--bg-dark);
-    transform: translateY(-3px);
-}
-
-/* Experience Timeline (LinkedIn Style) */
+/* Timeline Components */
 .timeline {
     position: relative;
     max-width: 800px;
-    margin: 0 auto;
+    margin-top: 2rem;
 }
 
-/* The vertical line */
-.timeline::after {
+.timeline::before {
     content: '';
     position: absolute;
-    width: 2px;
-    background-color: var(--border-color);
+    left: 20px;
     top: 0;
-    bottom: 0;
-    left: 40px; /* Aligned to the left for standard profile view */
+    height: 100%;
+    width: 2px;
+    background: var(--border-color);
 }
 
 .timeline-item {
-    padding: 10px 40px 40px 90px;
     position: relative;
-    background-color: inherit;
-    width: 100%;
+    padding-left: 60px;
+    margin-bottom: 3rem;
+    cursor: default;
 }
 
-/* The dot */
-.timeline-item::after {
+.timeline-item::before {
     content: '';
     position: absolute;
-    width: 16px;
-    height: 16px;
-    right: auto;
-    left: 33px;
-    background-color: var(--bg-dark);
-    border: 3px solid var(--accent-blue);
-    top: 15px;
+    left: 12px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
+    background: var(--bg-main);
+    border: 3px solid var(--accent-blue);
     z-index: 1;
-    transition: background-color var(--transition-fast);
+    transition: all var(--transition-fast);
 }
 
-.timeline-item:hover::after {
-    background-color: var(--accent-blue);
+.timeline-item:hover::before {
+    background: var(--accent-blue);
+    box-shadow: 0 0 10px var(--accent-blue);
 }
 
 .timeline-content {
     background: var(--bg-card);
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    display: flex;
-    gap: 1.5rem;
+    box-shadow: var(--shadow-soft);
     transition: transform var(--transition-normal);
 }
 
 .timeline-content:hover {
-    transform: translateX(10px);
-    border-color: var(--accent-purple);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
 }
 
-.company-logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 8px;
-    object-fit: contain;
-    background: white;
-    padding: 5px;
-}
-
-.exp-details h3 {
-    color: var(--accent-blue);
-    margin-bottom: 0.2rem;
-}
-
-.exp-details h4 {
-    color: var(--text-primary);
-    font-size: 1.1rem;
+.timeline-date {
+    color: var(--accent-purple);
+    font-weight: 500;
     margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    font-family: var(--font-heading);
 }
 
-.exp-date {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
+.timeline-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.timeline-company {
+    color: var(--accent-blue);
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
-/* Achievements */
+.timeline-desc {
+    color: var(--text-secondary);
+}
+
+/* Achievements Grid */
 .achievements-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .achievement-card {
     background: var(--bg-card);
-    border-radius: 16px;
-    overflow: hidden;
-    cursor: pointer;
     border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-soft);
     transition: all var(--transition-normal);
 }
 
 .achievement-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--accent-purple);
-    box-shadow: 0 10px 20px rgba(124, 58, 237, 0.2);
+    transform: translateY(-8px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.1);
 }
 
-.achievement-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.achie-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fbbf24; /* gold */
 }
 
-.achievement-info {
-    padding: 1.5rem;
+.achie-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
 }
 
-@media (max-width: 768px) {
+.achie-year {
+    color: var(--accent-purple);
+    font-size: 0.9rem;
+    font-family: var(--font-heading);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .profile-layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .sidebar-menu {
+        display: none;
+    }
+
     .about-wrapper {
         flex-direction: column;
         text-align: center;
     }
-    
-    .timeline::after {
-        left: 20px;
-    }
-    
-    .timeline-item {
-        padding-left: 50px;
-        padding-right: 0;
-    }
-    
-    .timeline-item::after {
-        left: 13px;
-    }
-    
-    .timeline-content {
-        flex-direction: column;
+
+    .skills-container {
+        justify-content: center;
     }
 }

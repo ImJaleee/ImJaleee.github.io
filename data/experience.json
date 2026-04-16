@@ -1,21 +1,21 @@
 [
   {
     "id": "1",
-    "company": "Tech Solutions Inc.",
-    "logo": "https://ui-avatars.com/api/?name=TS&background=0a0f1c&color=00d4ff",
-    "position": "Data Scientist",
+    "company": "GoTo Group",
+    "logo": "https://ui-avatars.com/api/?name=GT&background=0a0f1c&color=00d4ff",
+    "position": "Data Scientist Intern",
     "startYear": "2023",
     "endYear": "Present",
-    "description": "Leading data initiatives for product analytics.\n- Built ML models for user segmentation.\n- Reduced processing time by 40% through pipeline optimization."
+    "description": "Bekerja dalam tim analitik data untuk mengolah Big Data menggunakan Python dan SQL.\n- Membangun model machine learning untuk segmentasi pelanggan.\n- Meningkatkan efisiensi pipeline ETL hingga 30%."
   },
   {
+    "id": "2",
     "company": "LindungiHutan",
-    "logo": "https://ui-avatars.com/api/?name=DA&background=0a0f1c&color=7c3aed",
+    "logo": "https://ui-avatars.com/api/?name=LH&background=0a0f1c&color=7c3aed",
     "position": "Data Analyst Intern",
     "startYear": "2022",
     "endYear": "2023",
-    "description": "LindungiHutan is a crowdfunding platform dedicated to environmental conservation and empowering coastal communities in Indonesia. Since 2016, it has partnered with local farmers and supporters to plant trees, raise awareness, and address flooding, erosion, and deforestation issues.\n\nMy Task:\n• Reviewing data and making recommendations based on findings\n• Identifying potential issues or problems with the company's current business model\n• Creating reports and charts to help stakeholders understand the data\n• Conducting research to gather data on specific topics or industries\n• Recommending changes to products or services based on customer feedback\n• Analyzing customer data to identify patterns or opportunities for improvement\n• Collecting, analyzing, and storing data in an organized fashion to ensure that it can be retrieved efficiently when needed\n• Reviewing data for accuracy and ensuring that it is presented in a clear and concise  manner",
-    "id": "2"
+    "description": "LindungiHutan is a crowdfunding platform dedicated to environmental conservation and empowering coastal communities in Indonesia. Since 2016, it has partnered with local farmers and supporters to plant trees, raise awareness, and address flooding, erosion, and deforestation issues.\n\nMy Task:\n• Reviewing data and making recommendations based on findings\n• Identifying potential issues or problems with the company's current business model\n• Creating reports and charts to help stakeholders understand the data\n• Conducting research to gather data on specific topics or industries\n• Recommending changes to products or services based on customer feedback\n• Analyzing customer data to identify patterns or opportunities for improvement\n• Collecting, analyzing, and storing data in an organized fashion to ensure that it can be retrieved efficiently when needed\n• Reviewing data for accuracy and ensuring that it is presented in a clear and concise  manner"
   },
   {
     "company": "asdada",
@@ -34,5 +34,23 @@
     "endYear": "2022",
     "description": "Testtt",
     "id": "1776295383601"
+  },
+  {
+    "id": "4",
+    "company": "Digital Agency Nusantara",
+    "logo": "https://ui-avatars.com/api/?name=DA&background=0a0f1c&color=7c3aed",
+    "position": "Junior Web Developer",
+    "startYear": "2021",
+    "endYear": "2023",
+    "description": "Mengembangkan website dan web app untuk berbagai klien UMKM dan Korporat.\n- Bertanggung jawab penuh terhadap slicing UI/UX menggunakan React dan TailwindCSS.\n- Integrasi REST API dari sisi backend ke frontend."
+  },
+  {
+    "id": "5",
+    "company": "Data Science Indonesia",
+    "logo": "https://ui-avatars.com/api/?name=DS&background=0a0f1c&color=10b981",
+    "position": "Research Assistant Mentee",
+    "startYear": "2020",
+    "endYear": "2021",
+    "description": "Berpartisipasi dalam penelitian open source mengenai sentimen analisis di media sosial.\n- Scraping data dari platform X (Twitter).\n- Membersihkan dan mempersiapkan dataset."
   }
 ]

@@ -2,19 +2,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Only run on profile page
     if (!document.getElementById('experienceTimeline')) return;
 
+    // Load Data
     async function loadData() {
         const experience = await fetchLocalData('experience.json');
+        const education = await fetchLocalData('education.json');
         const achievements = await fetchLocalData('achievements.json');
         
         renderExperience(experience);
+        renderEducation(education);
         renderAchievements(achievements);
     }
 
+    // Render Experience
     function renderExperience(data) {
         const timeline = document.getElementById('experienceTimeline');
         timeline.innerHTML = '';
         
-        if (data.length === 0) {
+        if (!data || data.length === 0) {
             timeline.innerHTML = '<p style="color:var(--text-secondary); padding-left: 20px;">No experience data found.</p>';
             return;
         }
@@ -23,28 +27,59 @@ document.addEventListener('DOMContentLoaded', async () => {
             const item = document.createElement('div');
             item.className = 'timeline-item';
             
-            let logoUrl = exp.logo ? exp.logo : 'https://placehold.co/100x100/12192b/00d4ff?text=Logo';
+            // In light theme, if there's no logo we can just not show it or use a fallback
+            let logoHtml = '';
+            if (exp.logo) {
+                logoHtml = `<img src="${exp.logo}" alt="${exp.company}" class="company-logo" style="width: 50px; height: 50px; object-fit: contain; margin-bottom: 1rem;">`;
+            }
             
             item.innerHTML = `
-                <div class="timeline-content glass-panel">
-                    <img src="${logoUrl}" alt="${exp.company}" class="company-logo">
-                    <div class="exp-details">
-                        <h3>${exp.position}</h3>
-                        <h4>${exp.company}</h4>
-                        <div class="exp-date">${exp.startYear} - ${exp.endYear}</div>
-                        <p style="color:var(--text-secondary); font-size:0.95rem;">${exp.description.replace(/\n/g, '<br>')}</p>
-                    </div>
+                <div class="timeline-content">
+                    ${logoHtml}
+                    <div class="timeline-date">${exp.startYear} - ${exp.endYear}</div>
+                    <h3 class="timeline-title">${exp.position}</h3>
+                    <div class="timeline-company">${exp.company}</div>
+                    <p class="timeline-desc">${exp.description.replace(/\n/g, '<br>')}</p>
                 </div>
             `;
             timeline.appendChild(item);
         });
     }
 
+    // Render Education
+    function renderEducation(data) {
+        const timeline = document.getElementById('educationTimeline');
+        if (!timeline) return;
+        timeline.innerHTML = '';
+        
+        if (!data || data.length === 0) {
+            timeline.innerHTML = '<p style="color:var(--text-secondary); padding-left: 20px;">No education data found.</p>';
+            return;
+        }
+
+        data.forEach(edu => {
+            const item = document.createElement('div');
+            item.className = 'timeline-item';
+            
+            item.innerHTML = `
+                <div class="timeline-content">
+                    <div class="timeline-date">${edu.year}</div>
+                    <h3 class="timeline-title">${edu.degree}</h3>
+                    <div class="timeline-company">${edu.school}</div>
+                    <p class="timeline-desc">${edu.description.replace(/\n/g, '<br>')}</p>
+                </div>
+            `;
+            timeline.appendChild(item);
+        });
+    }
+
+    // Render Achievements
     function renderAchievements(data) {
         const container = document.getElementById('achievementsContainer');
+        if (!container) return;
         container.innerHTML = '';
         
-        if (data.length === 0) {
+        if (!data || data.length === 0) {
             container.innerHTML = '<p style="color:var(--text-secondary);">No achievements data found.</p>';
             return;
         }
@@ -53,54 +88,47 @@ document.addEventListener('DOMContentLoaded', async () => {
             const card = document.createElement('div');
             card.className = 'achievement-card';
             
-            let imageUrl = achie.media && achie.media.url ? achie.media.url : 'https://placehold.co/600x400/12192b/7c3aed?text=Achievement';
+            let imageUrl = achie.media && achie.media.url ? achie.media.url : 'https://placehold.co/600x400/f8fafc/8b5cf6?text=Achievement';
             
             card.innerHTML = `
-                <img src="${imageUrl}" alt="${achie.title}" class="achievement-img">
-                <div class="achievement-info">
-                    <h3 style="color:var(--accent-purple); margin-bottom:0.5rem;">${achie.title}</h3>
-                    <p style="color:var(--text-secondary); font-size:0.9rem;">${achie.date || ''}</p>
-                </div>
+                <div class="achie-icon">🏆</div>
+                <h3 class="achie-title">${achie.title}</h3>
+                <p class="achie-year">${achie.date || ''}</p>
             `;
             
-            card.addEventListener('click', () => openAchievementModal(achie));
+            card.addEventListener('click', () => openAchievementModal(achie, imageUrl));
             container.appendChild(card);
         });
     }
 
-    function openAchievementModal(achie) {
+    function openAchievementModal(achie, fallbackImg) {
         const modal = document.getElementById('achievementModal');
         const modalBody = document.getElementById('achieModalBody');
         
         let mediaHtml = '';
         if (achie.media && achie.media.type === 'video') {
-            mediaHtml = `<video src="${achie.media.url}" class="modal-media" controls autoplay muted loop></video>`;
+            mediaHtml = `<video src="${achie.media.url}" style="width:100%; border-radius: 12px; margin-bottom: 1.5rem;" controls autoplay muted loop></video>`;
         } else {
-            let imgUrl = achie.media && achie.media.url ? achie.media.url : 'https://placehold.co/600x400/12192b/7c3aed?text=Achievement';
-            mediaHtml = `<img src="${imgUrl}" alt="${achie.title}" class="modal-media">`;
+            mediaHtml = `<img src="${fallbackImg}" alt="${achie.title}" style="width:100%; border-radius: 12px; margin-bottom: 1.5rem;">`;
         }
 
         let linksHtml = '';
         if (achie.links && achie.links.length > 0) {
             linksHtml = achie.links.map(link => 
-                `<a href="${link.url}" target="_blank" class="btn btn-outline">${link.label}</a>`
+                `<a href="${link.url}" target="_blank" class="btn btn-outline" style="margin-right: 0.5rem; margin-top: 1rem;">${link.label}</a>`
             ).join('');
         }
 
         modalBody.innerHTML = `
-            <div class="modal-body-split">
-                <div class="modal-media-container">
-                    ${mediaHtml}
+            <div style="padding: 2rem;">
+                ${mediaHtml}
+                <h2 style="color:var(--accent-blue); margin-bottom: 0.5rem;">${achie.title}</h2>
+                ${achie.date ? `<p style="color:var(--text-secondary); margin-bottom:1rem; font-weight: 500;">${achie.date}</p>` : ''}
+                <div style="color:var(--text-primary); line-height: 1.6;">
+                    ${achie.description ? achie.description.replace(/\n/g, '<br>') : 'No description provided.'}
                 </div>
-                <div class="modal-info">
-                    <h2 style="color:var(--accent-purple);">${achie.title}</h2>
-                    ${achie.date ? `<p style="color:white; margin-bottom:1rem;">${achie.date}</p>` : ''}
-                    <div class="modal-desc">
-                        ${achie.description ? achie.description.replace(/\n/g, '<br>') : 'No description provided.'}
-                    </div>
-                    <div class="modal-links">
-                        ${linksHtml}
-                    </div>
+                <div>
+                    ${linksHtml}
                 </div>
             </div>
         `;
@@ -109,4 +137,47 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     loadData();
+
+    // Scroll Spy Logic
+    const sections = document.querySelectorAll('.profile-section');
+    const menuLinks = document.querySelectorAll('.sidebar-menu a');
+
+    // Make smooth scrolling for menu
+    menuLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - 120,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '-150px 0px -60% 0px',
+        threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let id = entry.target.getAttribute('id');
+                menuLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${id}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 });

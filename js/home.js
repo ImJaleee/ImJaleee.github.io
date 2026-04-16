@@ -14,14 +14,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         container.innerHTML = '';
         
         // Show featured first or limit to initially visible
-        const displayProjects = allProjects.filter(p => p.featured).slice(0, 4);
-        if (displayProjects.length === 0) displayProjects.push(...allProjects.slice(0, 4));
+        const displayProjects = allProjects.filter(p => p.featured).slice(0, 3);
+        if (displayProjects.length === 0) displayProjects.push(...allProjects.slice(0, 3));
 
         displayProjects.forEach(project => {
             const card = document.createElement('div');
             card.className = 'project-card glass-panel';
             
-            let imageUrl = project.media && project.media.url ? project.media.url : 'https://placehold.co/600x400/12192b/00d4ff?text=Project+Image';
+            let imageUrl = project.media && project.media.url ? project.media.url : 'https://placehold.co/600x400/f8fafc/3b82f6?text=Project+Image';
             
             card.innerHTML = `
                 <img src="${imageUrl}" alt="${project.title}" class="project-img">
@@ -45,27 +45,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         let mediaHtml = '';
         if (project.media && project.media.type === 'video') {
-            mediaHtml = `<video src="${project.media.url}" class="modal-media" controls autoplay muted loop></video>`;
+            mediaHtml = `<video src="${project.media.url}" class="modal-media" style="width:100%; border-radius:12px; margin-bottom:1.5rem;" controls autoplay muted loop></video>`;
         } else {
-            let imgUrl = project.media && project.media.url ? project.media.url : 'https://placehold.co/600x400/12192b/00d4ff?text=Project+Image';
-            mediaHtml = `<img src="${imgUrl}" alt="${project.title}" class="modal-media">`;
+            let imgUrl = project.media && project.media.url ? project.media.url : 'https://placehold.co/600x400/f8fafc/3b82f6?text=Project+Image';
+            mediaHtml = `<img src="${imgUrl}" alt="${project.title}" class="modal-media" style="width:100%; border-radius:12px; margin-bottom:1.5rem;">`;
         }
 
         let linksHtml = '';
         if (project.links && project.links.length > 0) {
             linksHtml = project.links.map(link => 
-                `<a href="${link.url}" target="_blank" class="btn btn-outline">${link.label}</a>`
+                `<a href="${link.url}" target="_blank" class="btn btn-outline" style="margin-right:0.5rem;">${link.label}</a>`
             ).join('');
         }
 
         modalBody.innerHTML = `
-            <div class="modal-body-split">
-                <div class="modal-media-container">
-                    ${mediaHtml}
-                </div>
-                <div class="modal-info">
-                    <h2>${project.title}</h2>
-                    <div class="modal-desc">
+            <div style="padding: 2rem;">
+                ${mediaHtml}
+                <div class="modal-info" style="padding:0;">
+                    <h2 style="color:var(--text-primary); margin-bottom:0.5rem;">${project.title}</h2>
+                    <div class="modal-desc" style="color:var(--text-secondary); margin-bottom:1.5rem;">
                         ${(project.fullDescription || project.description).replace(/\n/g, '<br>')}
                     </div>
                     <div class="modal-links">
