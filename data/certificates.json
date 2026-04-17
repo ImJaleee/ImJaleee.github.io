@@ -1,38 +1,272 @@
 [
   {
     "id": "1",
-    "title": "Google Data Analytics Professional Certificate",
-    "issuer": "Coursera",
-    "date": "Januari 2024",
-    "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800",
+    "title": "BNSP Digital Marketing",
+    "issuer": "Badan Nasional Sertifikasi Profesi",
+    "date": "Jun 2024",
+    "image": "content/img/certificate/BNSP Ahmad Tajali.pdf",
     "credentialUrl": "#",
-    "category": "Data Analyst"
+    "category": "Digital Marketing"
   },
   {
     "id": "2",
-    "title": "IBM Machine Learning Specialist",
-    "issuer": "IBM Training",
-    "date": "Oktober 2023",
-    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=800",
+    "title": "TensorFlow Developer Certificate",
+    "issuer": "TensorFlow",
+    "date": "Apr 2024",
+    "image": "content/img/certificate/TensorFlow Developer Certificate.jpeg",
     "credentialUrl": "#",
-    "category": "Data Science"
+    "category": "Machine Learning"
   },
   {
     "id": "3",
-    "title": "React.js Advanced Concepts",
-    "issuer": "Udemy",
-    "date": "Juni 2023",
-    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=800",
-    "credentialUrl": "#",
-    "category": "App/Web"
+    "title": "Structuring Machine Learning Projects",
+    "issuer": "DeepLearning.AI",
+    "date": "Nov 2023",
+    "image": "content/img/certificate/Structuring Machine Learning Projects.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/76XE5LRKLVR4",
+    "category": "Machine Learning"
   },
   {
     "id": "4",
-    "title": "Data Visualization with Tableau",
-    "issuer": "DataCamp",
-    "date": "Februari 2023",
-    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-    "credentialUrl": "#",
+    "title": "Machine Learning Specialization",
+    "issuer": "Stanford Online",
+    "date": "Oct 2023",
+    "image": "content/img/certificate/Machine Learning Specialization.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/specialization/YNJ2USDKXAH4",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "5",
+    "title": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+    "issuer": "Stanford Online",
+    "date": "Oct 2023",
+    "image": "content/img/certificate/Unsupervised Learning, Recommenders, Reinforcement Learning.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/7ZANSE865FK5",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "6",
+    "title": "Advanced Learning Algorithms",
+    "issuer": "Stanford Online",
+    "date": "Oct 2023",
+    "image": "content/img/certificate/Advanced Learning Algorithms.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/KUW6HFYQ4REE",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "7",
+    "title": "Supervised Machine Learning: Regression and Classification",
+    "issuer": "Stanford Online",
+    "date": "Oct 2023",
+    "image": "content/img/certificate/Supervised Machine Learning: Regression and Classification.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/3LSNM2RZWP4V",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "8",
+    "title": "DeepLearning.AI TensorFlow Developer Professional Certificate",
+    "issuer": "DeepLearning.AI",
+    "date": "Nov 2023",
+    "image": "content/img/certificate/DeepLearning.AI TensorFlow Developer Professional Certificate.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/professional-cert/CAR4P5F6YQP6",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "9",
+    "title": "Sequences, Time Series and Prediction",
+    "issuer": "DeepLearning.AI",
+    "date": "Nov 2023",
+    "image": "content/img/certificate/Sequences, Time Series and Prediction.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/V2UK7SZ6XTWD",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "10",
+    "title": "Natural Language Processing in TensorFlow",
+    "issuer": "DeepLearning.AI",
+    "date": "Nov 2023",
+    "image": "content/img/certificate/Natural Language Processing in TensorFlow.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/7VKDH9GSE2HU",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "11",
+    "title": "Convolutional Neural Networks in TensorFlow",
+    "issuer": "DeepLearning.AI",
+    "date": "Nov 2023",
+    "image": "content/img/certificate/Convolutional Neural Networks in TensorFlow.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/JJHBS4KNBPF4",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "12",
+    "title": "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning",
+    "issuer": "DeepLearning.AI",
+    "date": "Nov 2023",
+    "image": "content/img/certificate/Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/PY5HGMAAJJGL",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "13",
+    "title": "Mathematics for Machine Learning and Data Science Specialization",
+    "issuer": "DeepLearning.AI",
+    "date": "Sep 2023",
+    "image": "content/img/certificate/Mathematics for Machine Learning and Data Science Specialization.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/specialization/XVAYNWGPENEB",
+    "category": "Data Science"
+  },
+  {
+    "id": "14",
+    "title": "Probability & Statistics for Machine Learning & Data Science",
+    "issuer": "DeepLearning.AI",
+    "date": "Sep 2023",
+    "image": "content/img/certificate/Probability & Statistics for Machine Learning & Data Science.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/EZWT8KURHVZA",
+    "category": "Data Science"
+  },
+  {
+    "id": "15",
+    "title": "Calculus for Machine Learning and Data Science",
+    "issuer": "DeepLearning.AI",
+    "date": "Sep 2023",
+    "image": "content/img/certificate/Calculus for Machine Learning and Data Science.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/KBR4TW4D7Z56",
+    "category": "Data Science"
+  },
+  {
+    "id": "16",
+    "title": "Linear Algebra for Machine Learning and Data Science",
+    "issuer": "DeepLearning.AI",
+    "date": "Sep 2023",
+    "image": "content/img/certificate/Linear Algebra for Machine Learning and Data Science.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/RW7NKUK3EVCF",
+    "category": "Data Science"
+  },
+  {
+    "id": "17",
+    "title": "TensorFlow: Data and Deployment",
+    "issuer": "DeepLearning.AI",
+    "date": "Nov 2023",
+    "image": "content/img/certificate/TensorFlow: Data and Deployment.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/specialization/WN72VESVU77J",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "18",
+    "title": "Advanced Deployment Scenarios with TensorFlow",
+    "issuer": "DeepLearning.AI",
+    "date": "Nov 2023",
+    "image": "content/img/certificate/Advanced Deployment Scenarios with TensorFlow.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/682DKQ5LCN8Q",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "19",
+    "title": "Data Pipelines with TensorFlow Data Services",
+    "issuer": "DeepLearning.AI",
+    "date": "Nov 2023",
+    "image": "content/img/certificate/Data Pipelines with TensorFlow Data Services.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/5XLBCFVDFN2C",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "20",
+    "title": "Device-based Models with TensorFlow Lite",
+    "issuer": "DeepLearning.AI",
+    "date": "Nov 2023",
+    "image": "content/img/certificate/Device-based Models with TensorFlow Lite.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/JDAMK9SCB382",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "21",
+    "title": "Browser-based Models with TensorFlow.js",
+    "issuer": "DeepLearning.AI",
+    "date": "Nov 2023",
+    "image": "content/img/certificate/Browser-based Models with TensorFlow.js.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/WT8QWTC8XP7M",
+    "category": "Machine Learning"
+  },
+  {
+    "id": "22",
+    "title": "Share Data Through the Art of Visualization",
+    "issuer": "Coursera",
+    "date": "Sep 2023",
+    "image": "content/img/certificate/Share Data Through the Art of Visualization.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/8RG829AWZ48M",
     "category": "Data Analyst"
+  },
+  {
+    "id": "23",
+    "title": "Analyze Data to Answer Questions",
+    "issuer": "Coursera",
+    "date": "Sep 2023",
+    "image": "content/img/certificate/Analyze Data to Answer Questions.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/BXSGXVUL4URL",
+    "category": "Data Analyst"
+  },
+  {
+    "id": "24",
+    "title": "Process Data from Dirty to Clean",
+    "issuer": "Coursera",
+    "date": "Sep 2023",
+    "image": "content/img/certificate/Process Data from Dirty to Clean.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/JZFE34NZAG9H",
+    "category": "Data Analyst"
+  },
+  {
+    "id": "25",
+    "title": "Prepare Data for Exploration",
+    "issuer": "Coursera",
+    "date": "Sep 2023",
+    "image": "content/img/certificate/Prepare Data for Exploration.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/SD6ASLFULWFX",
+    "category": "Data Analyst"
+  },
+  {
+    "id": "26",
+    "title": "Ask Questions to Make Data-Driven Decisions",
+    "issuer": "Coursera",
+    "date": "Sep 2023",
+    "image": "content/img/certificate/Ask Questions to Make Data-Driven Decisions.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/22A8URRTFSK3",
+    "category": "Data Analyst"
+  },
+  {
+    "id": "27",
+    "title": "Foundations: Data, Data, Everywhere",
+    "issuer": "Coursera",
+    "date": "Sep 2023",
+    "image": "content/img/certificate/Foundations: Data, Data, Everywhere.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/72VJAE463WPH",
+    "category": "Data Analyst"
+  },
+  {
+    "id": "28",
+    "title": "Introduction to Git and GitHub",
+    "issuer": "Coursera",
+    "date": "Aug 2023",
+    "image": "content/img/certificate/Introduction to Git and GitHub.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/8G7C2B33MZ6Q",
+    "category": "Software Engineering"
+  },
+  {
+    "id": "29",
+    "title": "Using Python to Interact with the Operating System",
+    "issuer": "Coursera",
+    "date": "Aug 2023",
+    "image": "content/img/certificate/Using Python to Interact with the Operating System.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/3DUB2AZZ4964",
+    "category": "Programming"
+  },
+  {
+    "id": "30",
+    "title": "Crash Course on Python",
+    "issuer": "Coursera",
+    "date": "Aug 2023",
+    "image": "content/img/certificate/Crash Course on Python.jpeg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/M2WV8FCWJASF",
+    "category": "Programming"
   }
 ]
