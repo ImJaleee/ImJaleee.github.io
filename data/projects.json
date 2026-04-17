@@ -80,7 +80,7 @@
     "fullDescription": "Built using N8N deployed via Docker, Gemini AI, Telegram Bot, and Power BI. This system allows users to record transactions simply by typing natural language commands in Telegram (e.g., \"Spent 100k for gas today\"), which automatically logs into Google Spreadsheets. The bot can generate automated financial reports (pie and bar charts) upon request. Furthermore, it features a real-time, all-in-one Power BI interactive dashboard displaying clustered column charts of income vs. expenses, KPI cards for total profit/loss, and a cumulative monthly balance line chart.",
     "media": {
       "type": "image",
-      "url": "content/img/project/Financial Tracker Bot with N8N and Power BI.jpeg"
+      "url": "content/img/project/N8N.jpeg"
     },
     "links": [
       {
@@ -105,7 +105,7 @@
     "fullDescription": "To address continuous operational losses over a two-year period, this project evaluated financial summaries and marketing effectiveness. By identifying and implementing a new email marketing strategy, the project achieved a cost reduction of $825,316 (an 82.5% decrease from the previous budget). Open rates saw a massive improvement, jumping to 57.8% (a 246.7% increase). Ultimately, the strategy generated $429,626 in profits, leading to a combined savings and profit impact of $1,254,942, pushing the company much closer to overall profitability.",
     "media": {
       "type": "image",
-      "url": "content/img/project/Shopee Email Marketing Analysis.jpeg"
+      "url": "content/img/project/Shopee.jpeg"
     },
     "links": [
       {
@@ -130,7 +130,7 @@
     "fullDescription": "Developed to meet the needs of stakeholders who required detailed, daily insights rather than standard monthly updates. The dashboard visualizes major stock price trends, monthly averages, daily close figures, and traded stock volume. It allows users to seamlessly switch between different delivery statistics across various months and years. This interactive tool facilitates rapid review and informed decision-making for the company's financial interests.",
     "media": {
       "type": "image",
-      "url": "content/img/project/Tesla Stock Price Analytics Dashboard.jpeg"
+      "url": "content/img/project/Tesla.jpeg"
     },
     "links": [
       {
