@@ -40,10 +40,18 @@
     "title": "POINS: Port Operation Integrated System",
     "description": "A comprehensive application and web platform designed to optimize port operations at PT. Kalimantan Prima Persada.",
     "fullDescription": "The POINS system enhances efficiency by streamlining port scheduling, barge monitoring, and delivery tracking. Key features include real-time predictive weather updates, CCTV integration, sensor data analysis, and instant notifications. The web admin platform offers over 30 advanced functionalities with a user-friendly dashboard for managing jetty and barge operations. It also includes a specialized Power BI scheduling dashboard for the engineering team and a comprehensive credentialed dashboard to monitor all activities such as total tonnage and barging with advanced filtering options.",
-    "media": {
-      "type": "image",
-      "url": "content/img/project/POINS.jpeg"
-    },
+    "media": [
+  {
+    "type": "image",
+    "url": "content/img/project/POINS Depan.png",
+    "alt": "Tampilan dashboard POINS"
+  },
+  {
+    "type": "image",
+    "url": "content/img/project/POINS Kalendar.png",
+    "alt": "Tampilan versi mobile POINS"
+  }
+]
     "links": [],
     "tags": [
       "Web Platform",
@@ -61,7 +69,7 @@
     "fullDescription": "Developed in association with Bangkit Academy (led by Google, Tokopedia, Gojek, & Traveloka), PlantWise empowers farmers to make better planting decisions. Users select their location on a map, allowing the app to gather climate data like rainfall, humidity, and temperature. A machine learning model then suggests the top three crop options suited for that specific area. Additionally, the app integrates cloud services to provide the latest agricultural news and updates, aiming to support reliable and sustainable harvests.",
     "media": {
       "type": "image",
-      "url": "content/img/project/PlantWise.jpeg"
+      "url": "content/img/project/PlantWise.png"
     },
     "links": [],
     "tags": [
@@ -105,7 +113,7 @@
     "fullDescription": "To address continuous operational losses over a two-year period, this project evaluated financial summaries and marketing effectiveness. By identifying and implementing a new email marketing strategy, the project achieved a cost reduction of $825,316 (an 82.5% decrease from the previous budget). Open rates saw a massive improvement, jumping to 57.8% (a 246.7% increase). Ultimately, the strategy generated $429,626 in profits, leading to a combined savings and profit impact of $1,254,942, pushing the company much closer to overall profitability.",
     "media": {
       "type": "image",
-      "url": "content/img/project/Shopee.jpeg"
+      "url": "content/img/project/Shopee.png"
     },
     "links": [
       {
@@ -130,7 +138,7 @@
     "fullDescription": "Developed to meet the needs of stakeholders who required detailed, daily insights rather than standard monthly updates. The dashboard visualizes major stock price trends, monthly averages, daily close figures, and traded stock volume. It allows users to seamlessly switch between different delivery statistics across various months and years. This interactive tool facilitates rapid review and informed decision-making for the company's financial interests.",
     "media": {
       "type": "image",
-      "url": "content/img/project/Tesla.jpeg"
+      "url": "content/img/project/Tesla.png"
     },
     "links": [
       {
