@@ -40,18 +40,10 @@
     "title": "POINS: Port Operation Integrated System",
     "description": "A comprehensive application and web platform designed to optimize port operations at PT. Kalimantan Prima Persada.",
     "fullDescription": "The POINS system enhances efficiency by streamlining port scheduling, barge monitoring, and delivery tracking. Key features include real-time predictive weather updates, CCTV integration, sensor data analysis, and instant notifications. The web admin platform offers over 30 advanced functionalities with a user-friendly dashboard for managing jetty and barge operations. It also includes a specialized Power BI scheduling dashboard for the engineering team and a comprehensive credentialed dashboard to monitor all activities such as total tonnage and barging with advanced filtering options.",
-    "media": [
-  {
-    "type": "image",
-    "url": "content/img/project/POINS Depan.png",
-    "alt": "Tampilan dashboard POINS"
-  },
-  {
-    "type": "image",
-    "url": "content/img/project/POINS Kalendar.png",
-    "alt": "Tampilan versi mobile POINS"
-  }
-]
+    "media": {
+      "type": "image",
+      "url": "content/img/project/POINS Depan.png"
+    },
     "links": [],
     "tags": [
       "Web Platform",
