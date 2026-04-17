@@ -96,7 +96,7 @@
       "Telegram Bot",
       "Docker"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "5",
@@ -121,7 +121,7 @@
       "Matplotlib",
       "Data Analysis"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "6",
@@ -144,6 +144,6 @@
       "Data Visualization",
       "Finance"
     ],
-    "featured": true
+    "featured": false
   }
 ]
