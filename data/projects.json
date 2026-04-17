@@ -1,95 +1,149 @@
 [
   {
     "id": "1",
-    "title": "Sistem Deteksi Churn Pelanggan",
-    "description": "Dashboard interaktif berbasis Machine Learning untuk memprediksi probabilitas pelanggan churn.",
-    "fullDescription": "Aplikasi ini memadukan backend Python (FastAPI) dengan frontend React. Menggunakan Random Forest Classifier untuk memberikan klasifikasi status pelanggan secara real-time. Pipeline terintegrasi dengan database PostgreSQL untuk mengamankan data pengguna komersial.",
+    "title": "PinMe",
+    "description": "An innovative app that brings print media to life by integrating Augmented Reality (AR), making printed materials more interactive and engaging.",
+    "fullDescription": "PinMe addresses the decline in print media engagement by turning static print into dynamic, interactive content. Key features include AR visualizations on print media, Nearby Notifications, and accessibility support through audio narration and virtual interaction. The project involved app and admin website development using Laravel and Kotlin, AR integration for 3D elements, creating an intuitive user dashboard for data-driven insights, and formulating comprehensive marketing strategies to reach a wider audience.",
     "media": {
       "type": "image",
-      "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+      "url": "content/img/project/PinMe.jpeg"
     },
     "links": [
       {
-        "label": "Github Repository",
-        "url": "https://github.com/ImJaleee"
+        "label": "Guide Book",
+        "url": "https://bit.ly/BukuPanduan_PinMe"
       },
       {
-        "label": "Live Demo",
-        "url": "#"
+        "label": "Website",
+        "url": "https://PinMeMore.com"
+      },
+      {
+        "label": "Play Store",
+        "url": "https://play.google.com/store/apps/details?id=com.pkm.pinme&hl=en"
+      },
+      {
+        "label": "YouTube Video",
+        "url": "https://www.youtube.com/watch?v=BaxpJyhMzHA"
       }
     ],
     "tags": [
-      "Machine Learning",
-      "React",
-      "Python",
-      "Data Science"
+      "Augmented Reality",
+      "Laravel",
+      "Kotlin",
+      "Mobile App",
+      "Web Development"
     ],
     "featured": true
   },
   {
     "id": "2",
-    "title": "Aplikasi Kasir UMKM (POS)",
-    "description": "Sistem aplikasi point-of-sale modern untuk UMKM dengan fitur laporan penjualan detail.",
-    "fullDescription": "Point of Sales (POS) yang dirancang khusus untuk memenuhi kebutuhan toko kelontong dan coffee shop. Menawarkan manajemen stok secara langsung (real-time) menggunakan Firebase dan antarmuka UI minimalis dari TailwindCSS.",
+    "title": "POINS: Port Operation Integrated System",
+    "description": "A comprehensive application and web platform designed to optimize port operations at PT. Kalimantan Prima Persada.",
+    "fullDescription": "The POINS system enhances efficiency by streamlining port scheduling, barge monitoring, and delivery tracking. Key features include real-time predictive weather updates, CCTV integration, sensor data analysis, and instant notifications. The web admin platform offers over 30 advanced functionalities with a user-friendly dashboard for managing jetty and barge operations. It also includes a specialized Power BI scheduling dashboard for the engineering team and a comprehensive credentialed dashboard to monitor all activities such as total tonnage and barging with advanced filtering options.",
     "media": {
       "type": "image",
-      "url": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800"
+      "url": "content/img/project/POINS.jpeg"
     },
-    "links": [
-      {
-        "label": "Lihat Code",
-        "url": "#"
-      }
-    ],
+    "links": [],
     "tags": [
-      "Web Dev",
-      "TailwindCSS",
-      "Firebase"
+      "Web Platform",
+      "Mobile App",
+      "Power BI",
+      "Dashboard",
+      "Port Operations"
     ],
     "featured": true
   },
   {
     "id": "3",
-    "title": "Analisa Data Crypto Harian",
-    "description": "Script eksploratori data analisis pergerakan aset kripto menggunakan pandas dan matplotlib.",
-    "fullDescription": "Project open source untuk menganalisa volatilitas koin kripto di market Binance. Skrip otomatis mengambil data melalui API, memfilter anomali, lalu membangun grafik pola investasi dalam file laporan PDF secara instan.",
+    "title": "PlantWise: Your Plant's Best Friend",
+    "description": "An app designed to help Indonesian farmers reduce crop failures caused by unpredictable weather using location-based data and machine learning.",
+    "fullDescription": "Developed in association with Bangkit Academy (led by Google, Tokopedia, Gojek, & Traveloka), PlantWise empowers farmers to make better planting decisions. Users select their location on a map, allowing the app to gather climate data like rainfall, humidity, and temperature. A machine learning model then suggests the top three crop options suited for that specific area. Additionally, the app integrates cloud services to provide the latest agricultural news and updates, aiming to support reliable and sustainable harvests.",
     "media": {
       "type": "image",
-      "url": "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&q=80&w=800"
+      "url": "content/img/project/PlantWise.jpeg"
     },
-    "links": [
-      {
-        "label": "Jupyter Notebook",
-        "url": "#"
-      }
-    ],
+    "links": [],
     "tags": [
-      "Data Analyst",
-      "Pandas",
-      "Python"
+      "Machine Learning",
+      "Agriculture",
+      "Mobile App",
+      "Cloud Services",
+      "Data Science"
     ],
     "featured": true
   },
   {
     "id": "4",
-    "title": "Katalog Properti Elegan",
-    "description": "Website listing properti elit dengan animasi interaktif dan fitur filtering kompleks.",
-    "fullDescription": "UI/UX fokus pada luxury properties. Dibangun menggunakan Next.js dan Framer Motion. Project ini menggunakan Contentful sebagai Headless CMS, membuat upload konten terbaru dari admin properti tanpa perlu sentuhan coding.",
+    "title": "Financial Tracker Bot with N8N and Power BI",
+    "description": "A smart, integrated financial recording and reporting automation system utilizing conversational AI and interactive dashboards.",
+    "fullDescription": "Built using N8N deployed via Docker, Gemini AI, Telegram Bot, and Power BI. This system allows users to record transactions simply by typing natural language commands in Telegram (e.g., \"Spent 100k for gas today\"), which automatically logs into Google Spreadsheets. The bot can generate automated financial reports (pie and bar charts) upon request. Furthermore, it features a real-time, all-in-one Power BI interactive dashboard displaying clustered column charts of income vs. expenses, KPI cards for total profit/loss, and a cumulative monthly balance line chart.",
     "media": {
       "type": "image",
-      "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800"
+      "url": "content/img/project/Financial Tracker Bot with N8N and Power BI.jpeg"
     },
     "links": [
       {
-        "label": "Live Web",
+        "label": "Github Repository",
         "url": "#"
       }
     ],
     "tags": [
-      "Next.js",
-      "Web Dev",
-      "Framer Motion"
+      "Automation",
+      "N8N",
+      "Power BI",
+      "Gemini AI",
+      "Telegram Bot",
+      "Docker"
     ],
-    "featured": false
+    "featured": true
+  },
+  {
+    "id": "5",
+    "title": "Shopee Email Marketing Analysis",
+    "description": "Analyzed Shopee's financial performance and evaluated email marketing campaigns to maximize revenue and minimize operational costs.",
+    "fullDescription": "To address continuous operational losses over a two-year period, this project evaluated financial summaries and marketing effectiveness. By identifying and implementing a new email marketing strategy, the project achieved a cost reduction of $825,316 (an 82.5% decrease from the previous budget). Open rates saw a massive improvement, jumping to 57.8% (a 246.7% increase). Ultimately, the strategy generated $429,626 in profits, leading to a combined savings and profit impact of $1,254,942, pushing the company much closer to overall profitability.",
+    "media": {
+      "type": "image",
+      "url": "content/img/project/Shopee Email Marketing Analysis.jpeg"
+    },
+    "links": [
+      {
+        "label": "Github Repository",
+        "url": "https://github.com/Jal3ee/Portofolio/tree/main/Data%20Scientist/Shopee%20Email%20Marketing"
+      }
+    ],
+    "tags": [
+      "Data Science",
+      "Python",
+      "Jupyter Notebook",
+      "Pandas",
+      "Matplotlib",
+      "Data Analysis"
+    ],
+    "featured": true
+  },
+  {
+    "id": "6",
+    "title": "Tesla Stock Price Analytics Dashboard",
+    "description": "An interactive data visualization dashboard to monitor and analyze Tesla's stock price trends over the last 3 months.",
+    "fullDescription": "Developed to meet the needs of stakeholders who required detailed, daily insights rather than standard monthly updates. The dashboard visualizes major stock price trends, monthly averages, daily close figures, and traded stock volume. It allows users to seamlessly switch between different delivery statistics across various months and years. This interactive tool facilitates rapid review and informed decision-making for the company's financial interests.",
+    "media": {
+      "type": "image",
+      "url": "content/img/project/Tesla Stock Price Analytics Dashboard.jpeg"
+    },
+    "links": [
+      {
+        "label": "Github Repository",
+        "url": "https://github.com/Jal3ee/Portofolio/tree/main/Data%20Analyst/Tesla%20Stock%20Price%20Dashboard"
+      }
+    ],
+    "tags": [
+      "Data Analyst",
+      "Dashboard",
+      "Data Visualization",
+      "Finance"
+    ],
+    "featured": true
   }
 ]
